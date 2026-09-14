@@ -1,11 +1,13 @@
 backend:
   name: github
   repo: Ere-Mia/paige-blog
-  branch: main
+  branch: master
 
 local_backend: true
 media_folder: public/images/uploads
-public_folder: /images/uploads
+public_folder: images/uploads
+site_url: https://ere-mia.github.io/paige-blog/
+display_url: https://ere-mia.github.io/paige-blog/
 
 collections:
   - name: posts

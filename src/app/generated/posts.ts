@@ -6,7 +6,7 @@ export const posts: readonly BlogPostData[] = [
     "title": "A Slower Sunday",
     "date": "2026-09-06T00:00:00.000Z",
     "description": "What happened when I stopped treating a quiet day like a list of jobs to finish.",
-    "featuredImage": "/images/uploads/slower-sunday.svg",
+    "featuredImage": "images/post-placeholder.svg",
     "category": "Everyday life",
     "slug": "a-slower-sunday",
     "bodyHtml": "<p>Sunday began without an alarm. The morning light arrived before I did, and for once there was nowhere I needed to hurry.</p>\n<h2>Leaving space in the day</h2>\n<p>I made coffee, opened the back door and sat outside while it was still cool. Usually I would use that time to plan everything that needed doing. Instead, I listened to the garden waking up.</p>\n<p>Later there was a walk, a good lunch and a book left open on the sofa. None of it was remarkable. That was exactly why it felt so restorative.</p>\n<blockquote>\n<p>Rest does not have to be earned by first becoming exhausted.</p>\n</blockquote>\n<p>I am writing this down as a reminder: an unhurried day is not an empty one.</p>\n"
@@ -15,7 +15,7 @@ export const posts: readonly BlogPostData[] = [
     "title": "Small Things Worth Noticing",
     "date": "2026-08-24T00:00:00.000Z",
     "description": "Five ordinary details that made this week feel brighter than expected.",
-    "featuredImage": "/images/uploads/small-things.svg",
+    "featuredImage": "images/uploads/small-things.svg",
     "category": "Reflections",
     "slug": "small-things-worth-noticing",
     "bodyHtml": "<p>Some weeks do not contain a grand adventure or a life-changing revelation. They can still be full of moments worth keeping.</p>\n<h2>This week&#39;s little list</h2>\n<ul>\n<li>The smell of rain through an open window.</li>\n<li>A neighbour leaving flowers by the gate.</li>\n<li>Finding the exact book I wanted in a charity shop.</li>\n<li>The first perfectly ripe blackberry of the year.</li>\n<li>A voice note from an old friend.</li>\n</ul>\n<p>Noticing these things does not mean ignoring the difficult parts. It simply gives the good moments somewhere to land.</p>\n<p>Next week, I am going to keep a scrap of paper nearby and see what else makes the list.</p>\n"

@@ -2,7 +2,7 @@
 title: Small Things Worth Noticing
 date: 2026-08-24
 description: Five ordinary details that made this week feel brighter than expected.
-featuredImage: /images/uploads/small-things.svg
+featuredImage: images/uploads/small-things.svg
 category: Reflections
 ---
 

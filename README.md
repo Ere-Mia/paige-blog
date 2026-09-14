@@ -10,7 +10,7 @@ This prototype tests whether a non-technical author can write and manage posts i
 4. Angular prerenders the homepage, listing, and every post as static HTML.
 5. GitHub Pages will eventually serve that static output.
 
-The Pages deployment workflow is intentionally deferred until the POC and its final URL/base path have been tested. Pull requests already run the unit tests and production build in GitHub Actions.
+Pull requests run the unit tests and production build in GitHub Actions. Pushes to `master` deploy the static output to `https://ere-mia.github.io/paige-blog/`.
 
 ## Run the public site locally
 
@@ -59,16 +59,20 @@ npm run build
 
 The static site is written to `dist/paige-blog/browser`. A pull request to GitHub automatically runs both commands through `.github/workflows/pull-request.yml`.
 
-## Hosted Decap and GitHub setup still required
+## GitHub Pages deployment
+
+The workflow in `.github/workflows/deploy-pages.yml` tests and builds Angular with the `/paige-blog/` base path, then publishes `dist/paige-blog/browser`. In the repository on GitHub, open **Settings → Pages** and set **Source** to **GitHub Actions**. The next push to `master` will deploy, or the workflow can be started manually from the Actions page.
+
+## Hosted Decap authentication still required
 
 The checked-in CMS configuration points at `Ere-Mia/paige-blog` on the `main` branch and contains no secrets. Before testing hosted publishing:
 
-1. Choose an authentication service compatible with Decap's GitHub backend. GitHub Pages cannot safely hold an OAuth client secret, so this requires a small external authentication service (or a service such as Netlify that provides Git Gateway).
+1. Deploy a GitHub-compatible OAuth proxy. For this small POC, a Cloudflare Worker is the recommended free option; its free allowance is far beyond a single-author blog's expected login traffic.
 2. Create the GitHub OAuth application and configure its callback URL exactly as required by that service.
 3. Store the OAuth client secret only in the authentication service's secret settings—not in this repository or frontend.
 4. Add the service's public `base_url` and, if required, `auth_endpoint` to `public/admin/config.yml`.
 5. Add the eventual author as a repository collaborator with the minimum GitHub access needed to write posts. Enable two-factor authentication and never share an account or personal access token.
-6. Once the final Pages URL is agreed, add the Pages deployment workflow with the matching Angular base path and enable GitHub Pages with **GitHub Actions** as its source.
+6. Test a CMS edit and confirm its commit triggers the Pages workflow.
 
 Publishing in the hosted editor will then create a Git commit. That commit triggers the eventual Pages build, and the static site updates when the deployment finishes.
 
@@ -80,7 +84,7 @@ Ask her to sign in, create a post, enter a title and description, write several 
 
 ## Known prototype limitations
 
-- Hosted login and deployment are not active yet.
+- Hosted login is not active until the OAuth proxy is configured.
 - The browser preview inside Decap is disabled; the public site is the accurate preview.
 - Local edits require restarting the Angular development server.
 - Images are optional and are not resized or optimised.

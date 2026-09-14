@@ -18,7 +18,7 @@ const posts = await Promise.all(files.map(async (file) => {
     title: String(data.title),
     date: new Date(data.date).toISOString(),
     description: String(data.description),
-    featuredImage: data.featuredImage ? String(data.featuredImage) : '/images/post-placeholder.svg',
+    featuredImage: data.featuredImage ? String(data.featuredImage) : 'images/post-placeholder.svg',
     category: String(data.category),
     slug: basename(file, '.md'),
     bodyHtml: await marked.parse(content),
