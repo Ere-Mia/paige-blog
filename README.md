@@ -65,12 +65,12 @@ The workflow in `.github/workflows/deploy-pages.yml` tests and builds Angular wi
 
 ## Hosted Decap authentication still required
 
-The checked-in CMS configuration points at `Ere-Mia/paige-blog` on the `main` branch and contains no secrets. Before testing hosted publishing:
+The checked-in CMS configuration points at `Ere-Mia/paige-blog` on the `master` branch and contains no secrets. Before testing hosted publishing:
 
-1. Deploy a GitHub-compatible OAuth proxy. For this small POC, a Cloudflare Worker is the recommended free option; its free allowance is far beyond a single-author blog's expected login traffic.
+1. The GitHub-compatible OAuth proxy is deployed at `https://paige-blog-auth.mia-bennett93.workers.dev`.
 2. Create the GitHub OAuth application and configure its callback URL exactly as required by that service.
 3. Store the OAuth client secret only in the authentication service's secret settings—not in this repository or frontend.
-4. Add the service's public `base_url` and, if required, `auth_endpoint` to `public/admin/config.yml`.
+4. The service's public `base_url` and `/auth` endpoint are configured in `public/admin/config.yml`.
 5. Add the eventual author as a repository collaborator with the minimum GitHub access needed to write posts. Enable two-factor authentication and never share an account or personal access token.
 6. Test a CMS edit and confirm its commit triggers the Pages workflow.
 
