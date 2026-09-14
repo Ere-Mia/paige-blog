@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
+  <title id="title">Simple decorative leaf pattern</title>
+  <rect width="1200" height="800" fill="#f1e9df"/>
+  <circle cx="600" cy="400" r="210" fill="#e0d1c1"/>
+  <path d="M600 585c-12-150 26-275 122-370" fill="none" stroke="#8a3f50" stroke-width="18" stroke-linecap="round"/>
+  <path d="M655 413c80-90 161-71 177-69-24 76-87 126-177 69ZM590 482c-96-69-166-31-181-20 42 67 116 98 181 20ZM678 324c55-85 123-82 142-78-13 68-63 116-142 78Z" fill="#849477"/>
+</svg>

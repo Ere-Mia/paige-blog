@@ -1,0 +1,12 @@
+.post { max-width: 54rem; }
+.back { display: inline-block; margin-bottom: 3rem; }
+header { text-align: center; }
+h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 500; }
+.description { max-width: 40rem; margin: 1.3rem auto .5rem; color: var(--muted); font-size: 1.15rem; }
+time { color: var(--muted); font-size: .9rem; }
+.featured { aspect-ratio: 16 / 9; width: 100%; margin: 3rem 0; border-radius: 1rem; object-fit: cover; }
+.body { max-width: 43rem; margin: 0 auto; font-family: Georgia, serif; font-size: 1.12rem; }
+.body :is(h2, h3) { margin-top: 2.2em; }
+.body img { margin: 2rem auto; border-radius: .5rem; }
+.body blockquote { margin-inline: 0; border-left: 4px solid var(--accent); padding-left: 1.2rem; color: var(--muted); font-style: italic; }
+.not-found { text-align: center; }

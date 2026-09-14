@@ -1,0 +1,14 @@
+<section class="page">
+  <p class="eyebrow">The blog</p><h1>Latest stories</h1>
+  <p class="lede">Notes, reflections and things learned along the way.</p>
+  <div class="post-grid">
+    @for (post of posts; track post.slug) {
+      <article>
+        <a [routerLink]="['/blog', post.slug]" tabindex="-1" aria-hidden="true"><img [src]="post.featuredImage" alt="" width="720" height="480"></a>
+        <p class="meta"><span>{{ post.category }}</span> · <time [attr.datetime]="post.date">{{ post.date | date: 'd MMMM y' }}</time></p>
+        <h2><a [routerLink]="['/blog', post.slug]">{{ post.title }}</a></h2>
+        <p>{{ post.description }}</p>
+      </article>
+    }
+  </div>
+</section>

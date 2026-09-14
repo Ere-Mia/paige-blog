@@ -1,0 +1,14 @@
+@if (post; as post) {
+  <article class="page post">
+    <a class="back" routerLink="/blog">← All posts</a>
+    <header>
+      <p class="eyebrow">{{ post.category }}</p><h1>{{ post.title }}</h1>
+      <p class="description">{{ post.description }}</p>
+      <time [attr.datetime]="post.date">{{ post.date | date: 'd MMMM y' }}</time>
+    </header>
+    <img class="featured" [src]="post.featuredImage" alt="" width="1200" height="675">
+    <div class="body" [innerHTML]="post.bodyHtml"></div>
+  </article>
+} @else {
+  <section class="page not-found"><h1>Post not found</h1><p>This story may have moved.</p><a routerLink="/blog">Return to the blog</a></section>
+}

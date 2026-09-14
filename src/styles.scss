@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+:root { --paper: #fffdf9; --surface: #f6f0e8; --ink: #29231f; --muted: #685f58; --accent: #8a3f50; --accent-dark: #682d3b; --line: #ded5ca; color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.65; }
+button, input, textarea, select { font: inherit; }
+a { color: var(--accent-dark); text-underline-offset: .18em; }
+a:focus-visible, button:focus-visible { outline: 3px solid #d59645; outline-offset: 3px; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.15; }
+.page { width: min(70rem, calc(100% - 2rem)); margin: 0 auto; padding: clamp(3rem, 8vw, 6rem) 0; }
+.eyebrow { margin: 0 0 .7rem; color: var(--accent); font-size: .8rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }

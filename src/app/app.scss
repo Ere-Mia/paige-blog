@@ -1,0 +1,10 @@
+:host { display: flex; min-height: 100vh; flex-direction: column; }
+.skip-link { position: fixed; top: .5rem; left: .5rem; z-index: 10; transform: translateY(-160%); background: var(--ink); color: white; padding: .7rem 1rem; }
+.skip-link:focus { transform: translateY(0); }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 2rem; width: min(70rem, calc(100% - 2rem)); margin: 0 auto; padding: 1.4rem 0; border-bottom: 1px solid var(--line); }
+.site-name { color: var(--ink); font-family: Georgia, serif; font-size: 1.35rem; font-weight: 700; text-decoration: none; }
+nav { display: flex; gap: 1.2rem; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover, nav a.active { color: var(--accent); }
+main { flex: 1; }
+footer { width: min(70rem, calc(100% - 2rem)); margin: 3rem auto 0; padding: 2rem 0; border-top: 1px solid var(--line); color: var(--muted); }

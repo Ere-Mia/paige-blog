@@ -1,0 +1,14 @@
+<section class="page hero">
+  <div>
+    <p class="eyebrow">Welcome</p>
+    <h1>A quiet corner for stories worth sharing.</h1>
+    <p class="intro">Personal reflections, useful discoveries and the moments I want to remember.</p>
+    <a class="button" routerLink="/blog">Read the blog <span aria-hidden="true">→</span></a>
+  </div>
+  @if (latestPost; as post) {
+    <a class="feature" [routerLink]="['/blog', post.slug]">
+      <img [src]="post.featuredImage" alt="" width="720" height="480">
+      <span>Latest post</span><strong>{{ post.title }}</strong>
+    </a>
+  }
+</section>

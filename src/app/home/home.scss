@@ -1,0 +1,11 @@
+.hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(2rem, 7vw, 6rem); }
+h1 { max-width: 12ch; margin: 0; font-size: clamp(2.7rem, 7vw, 5.3rem); font-weight: 500; }
+.intro { max-width: 34rem; margin: 1.5rem 0 2rem; color: var(--muted); font-size: 1.15rem; }
+.button { display: inline-block; border-radius: 999px; background: var(--accent); color: white; padding: .75rem 1.2rem; font-weight: 700; text-decoration: none; }
+.button:hover { background: var(--accent-dark); }
+.feature { overflow: hidden; border-radius: 1rem; background: var(--surface); color: var(--ink); text-decoration: none; }
+.feature img { aspect-ratio: 3 / 2; width: 100%; object-fit: cover; }
+.feature span, .feature strong { display: block; padding-inline: 1.2rem; }
+.feature span { padding-top: 1rem; color: var(--accent); font-size: .78rem; font-weight: 700; text-transform: uppercase; }
+.feature strong { padding-bottom: 1.2rem; font-family: Georgia, serif; font-size: 1.35rem; }
+@media (max-width: 46rem) { .hero { grid-template-columns: 1fr; } }

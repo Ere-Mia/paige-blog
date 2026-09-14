@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: Ere-Mia/paige-blog
+  branch: main
+
+local_backend: true
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: posts
+    label: Blog posts
+    label_singular: Blog post
+    folder: content/posts
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    editor:
+      preview: false
+    fields:
+      - { label: Title, name: title, widget: string, hint: "The headline readers will see." }
+      - { label: Short description, name: description, widget: text, hint: "One or two sentences shown on the blog page." }
+      - { label: Publish date, name: date, widget: datetime, date_format: "DD MMMM YYYY", time_format: false }
+      - { label: Featured image, name: featuredImage, widget: image, required: false, hint: "Optional. Choose a main image, or leave this blank." }
+      - { label: Category, name: category, widget: select, options: ["Everyday life", "Reflections", "Travel", "Recipes", "Other"] }
+      - { label: Post content, name: body, widget: markdown, buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote], modes: [rich_text] }
