@@ -1,4 +1,4 @@
-# Paige's Blog proof of concept
+# Ink & Echo proof of concept
 
 This prototype tests whether a non-technical author can write and manage posts in a friendly browser editor while Angular publishes a completely static blog. There is no production server or database.
 

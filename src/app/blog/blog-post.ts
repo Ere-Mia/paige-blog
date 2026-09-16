@@ -8,5 +8,5 @@ import { posts } from '../generated/posts';
 export class BlogPost {
   private readonly route = inject(ActivatedRoute);
   protected readonly post = posts.find(({ slug }) => slug === this.route.snapshot.paramMap.get('slug'));
-  constructor() { inject(Title).setTitle(this.post ? `${this.post.title} | Paige's Blog` : "Post not found | Paige's Blog"); }
+  constructor() { inject(Title).setTitle(this.post ? `${this.post.title} | Ink & Echo` : 'Post not found | Ink & Echo'); }
 }

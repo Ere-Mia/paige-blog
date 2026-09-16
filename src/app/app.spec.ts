@@ -21,7 +21,7 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.site-name')?.textContent).toContain("Paige's Blog");
+    expect(compiled.querySelector('.site-name')?.textContent).toContain('Ink & Echo');
     expect(compiled.querySelector('nav')?.textContent).toContain('Blog');
   });
 });
