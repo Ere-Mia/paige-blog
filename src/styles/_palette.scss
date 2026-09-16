@@ -1,0 +1,28 @@
+@mixin custom-properties {
+  --green-100: #edf4ef;
+  --green-200: #d4e5d9;
+  --green-300: #a9cbb4;
+  --green-400: #6d9a7c;
+  --green-500: #315b45;
+  --green-600: #284c39;
+  --green-700: #203d2f;
+  --green-800: #172e23;
+
+  --blue-100: #edf3f7;
+  --blue-200: #d6e3ea;
+  --blue-300: #abc5d3;
+  --blue-400: #6f96aa;
+  --blue-500: #253f52;
+  --blue-600: #203746;
+  --blue-700: #1a2e3b;
+  --blue-800: #14242f;
+
+  --cream-100: #fffdf8;
+  --cream-200: #faf5eb;
+  --cream-300: #f5eddf;
+  --cream-400: #f0e5d2;
+  --cream-500: #eadcc5;
+  --cream-600: #cbb99d;
+  --cream-700: #a38d6d;
+  --cream-800: #776248;
+}

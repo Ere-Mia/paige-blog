@@ -5,7 +5,7 @@ article img { aspect-ratio: 3 / 2; width: 100%; border-radius: .7rem; object-fit
 .meta { margin: 1rem 0 .3rem; color: var(--muted); font-size: .85rem; }
 .meta span { color: var(--accent); font-weight: 700; }
 h2 { margin: 0; font-size: 1.7rem; }
-h2 a { color: var(--ink); text-decoration: none; }
+h2 a { color: var(--title); text-decoration: none; }
 h2 a:hover { color: var(--accent); }
 article > p:last-child { margin-top: .65rem; color: var(--muted); }
 @media (max-width: 40rem) { .post-grid { grid-template-columns: 1fr; } }
