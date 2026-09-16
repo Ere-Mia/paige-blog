@@ -3,6 +3,24 @@ import { BlogPostData } from '../blog/blog-post.model';
 
 export const posts: readonly BlogPostData[] = [
   {
+    "title": "Romanticised but burnt out",
+    "date": "2026-09-14T23:00:00.000Z",
+    "description": "................lol.......",
+    "featuredImage": "images/post-placeholder.svg",
+    "category": "Everyday life",
+    "slug": "romanticised-but-burnt-out",
+    "bodyHtml": "<p>idkwhattotypebuthi</p>\n"
+  },
+  {
+    "title": "Created by mia because I can",
+    "date": "2026-09-13T23:00:00.000Z",
+    "description": "Ingabunga",
+    "featuredImage": "images/post-placeholder.svg",
+    "category": "Reflections",
+    "slug": "created-by-mia-because-i-can",
+    "bodyHtml": "<p>So I got this working, finally</p>\n"
+  },
+  {
     "title": "A Slower Sunday",
     "date": "2026-09-06T00:00:00.000Z",
     "description": "What happened when I stopped treating a quiet day like a list of jobs to finish.",
