@@ -7,5 +7,5 @@ h1 { max-width: 12ch; margin: 0; font-size: clamp(2.7rem, 7vw, 5.3rem); font-wei
 .feature img { aspect-ratio: 3 / 2; width: 100%; object-fit: cover; }
 .feature span, .feature strong { display: block; padding-inline: 1.2rem; }
 .feature span { padding-top: 1rem; color: var(--accent); font-size: .78rem; font-weight: 700; text-transform: uppercase; }
-.feature strong { padding-bottom: 1.2rem; font-family: Georgia, serif; font-size: 1.35rem; }
+.feature strong { padding-bottom: 1.2rem; font-family: var(--font-title); font-size: 1.35rem; }
 @media (max-width: 46rem) { .hero { grid-template-columns: 1fr; } }
