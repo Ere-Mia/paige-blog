@@ -1,4 +1,4 @@
-:root { --paper: #fffdf9; --surface: #f6f0e8; --ink: #29231f; --muted: #685f58; --accent: #8a3f50; --accent-dark: #682d3b; --line: #ded5ca; --font-title: "Cormorant Unicase", Georgia, "Times New Roman", serif; color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+:root { --paper: #fffdf9; --surface: #f6f0e8; --ink: #29231f; --muted: #685f58; --accent: #8a3f50; --accent-dark: #682d3b; --line: #ded5ca; --font-body: "Bellefair", Georgia, "Times New Roman", serif; --font-title: "Cormorant Unicase", Georgia, "Times New Roman", serif; color-scheme: light; font-family: var(--font-body); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.65; }
